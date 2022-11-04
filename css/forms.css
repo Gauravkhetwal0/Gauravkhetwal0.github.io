@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-color: #012E40;
+}
+
+/* Utility Classes */
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+h1{
+	padding: 20px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 2rem;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header  */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_header{
+    font-family:  'Pacifico', cursive;
+    font-size: 48px;
+    color: #ac6322;
+    margin-left: 1rem;
+}
+.left_header{
+    margin: 1rem;
+}
+.left_header>a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem
+}
+
+.left_header>a:hover{
+    background-color: whitesmoke;
+    color: #012E40;
+    border-radius: 10px;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	background-color: #e6cbb4;
+}
+p {
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+section {
+	flex-basis: 57%;
+	margin-right: 10%;
+	display: block;
+}
+aside {
+	display: block;
+}
+
+fieldset{
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+	display: block;
+}
+
+legend{
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+	color: #012E40;
+}
+
+label{
+	display: block;
+	margin-left: 1rem;
+	
+	font-weight: bold;
+	
+}
+.space{
+	margin-top: 1rem;
+}
+input,select,textarea{
+	margin-left: 2rem;
+	margin-top: 1rem;
+	
+}
+select{
+	font-size: 1rem;;
+}
+textarea{
+	display: block;
+	height: 7rem;
+	width: 400px;
+	padding: 0.5rem;
+}
+button{
+	font-size: 1rem;
+	margin: 2rem 0;
+	background-color: #bb342fe0;
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	margin-left: 27rem;
+}
+
+button:hover{
+	background-color: white;
+	color: #bb342fe0
+}
+
+
+input:not([type="radio"]):not([type="checkbox"]),textarea,select{
+	display: block;
+	margin-bottom: 20px;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0.15rem 0.15rem;
+	border-radius: 5px;
+}
+
+
+/* Footer */
+
+.main_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    margin: 1rem;
+}
+
+.main_footer>p{
+    padding: 1px;
+}
+.main_footer>p>span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ac6322;
+}

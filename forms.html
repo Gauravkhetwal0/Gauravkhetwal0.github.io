@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/forms.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="main_header">Bootcamp Projects</div>
+            <div class="left_header">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="blog.html">Excerpt</a>
+                <a href="forms.html">Contact</a>
+            </div>
+        </div>
+		<div class="wrapper">
+			<section>
+				
+				<h1>Contact Form</h1>
+				
+				<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES
+				" method="POST">
+				<input type="hidden" value="gaurav.khetwal@sage.com" name="send_to">
+					<fieldset>
+						<legend>Your Contact information</legend>
+	
+						<label for="name">Your name </label>
+						<input type="text" name="name" id="name"> 
+						<label for="phone">
+							Phone number
+	
+						</label>
+						<input type="tel"name="phone" id="phone" placeholder="Don't forget your areacode">
+						<label for="email">
+							Email
+	
+						</label>
+						<input type="email" name="email"id="email">
+							
+						</fieldset>
+						<fieldset>
+							<legend>Opinion</legend>
+						<label for="qty">How would you rate my project on a scale of 1 to 5 with 5 being the best.</label>
+						<input type="number" name="qty" id="qty" min="1" max="5">
+	
+						<label>Which Part do you like most?</label>
+						<ul>
+							<label><input type="radio" name="ufotype" value="classic" checked> Home Page
+							</label>
+							<label><input type="radio" name="ufotype" value="classic">  About Me </label>
+							<label><input type="radio" name="ufotype" value="classic"> Book Excerpt </label>
+							<label><input type="radio" name="ufotype" value="classic"> Contact form </label>
+						</ul> 
+						<label for="abtype" class="space"> Which part should I improve more?</label>
+						<select name="abtype" id="abtype">
+							<option selected >Select one..</option>
+							<option value="tour">HTML</option>	
+							<option value="dinner">CSS </option>	
+							<option value="dance">Javascript</option>	
+							<option value="whales">All of the above</option>	
+						</select>
+					
+						<label for="comments"> Special requests:</label>
+						<textarea name="comments" id="comments" placeholder="Enter your requests.."></textarea>
+						<label for="subscribe">
+	
+							<input type="checkbox" value="subscribe" id="subscribe" name="subscribe" checked>Add me to your email list
+						</label>
+					</fieldset>
+					<button type="submit">Submit </button>
+				</form>
+					
+			</section>
+	
+			
+		</div>
+        <footer class="main_footer">
+            <p>GauravKhetwal - All rights reserved &copy; 2022
+           </p> 
+           <p>This page is created as an Exercise for <span>Frontend Masters Bootcamp</span></p>
+        </footer>
+    </div>
+	
+	<script src="../form/js/forms.js"></script>
+</body>
+</html>
+
+
+<!-- 
+
+	
+ -->
