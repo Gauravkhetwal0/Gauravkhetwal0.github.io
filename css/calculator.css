@@ -52,6 +52,19 @@ a{
 }
 
 /* Section  */
+.calHeading{
+    margin-top: -450px;
+    margin-right: -350px;
+    font-size: 60px;
+    color: #6C748C;
+}
+.sectionContainer{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BEBDBF ;
+}
 
 
 .calc{
