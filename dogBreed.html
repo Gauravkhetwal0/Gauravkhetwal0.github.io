@@ -8,7 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <title>Dog Viewer</title>
+  <link rel="stylesheet" href="./css/dogBreed.css">
 </head>
 <body>
     <div class="container">
@@ -16,32 +17,44 @@
         <div class="header">
             <div class="main_header">Bootcamp Projects</div>
             <div class="left_header">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="aboutme.html">About Me</a>
                 <a href="blog.html">Excerpt</a>
                 <a href="forms.html">Contact</a>
             </div>
         </div>
-        <div class="section">
-            <div class="left_section">
-                <p class="main_head">HTML & CSS</p>
-                <a href="aboutme.html">About Me</a>
-                <a href="blog.html">Book Except</a>
-                <a href="forms.html">Contact Form</a>
+       <!-- Here comes the body -->
+       <div class="sectionArea">
 
-            </div>
-            <div class="right_section">
-                <p class="main_head">Javascript</p>
-                <a href="calculator.html">Calculator</a>
-                <a href="dogBreed.html">Dog Breed</a>
-                <a href="#">Mole Game</a>
-            </div>
+           <div class="navBar">
+               <ul class="nav-list">
+                   <li>
+                       <h1>Dog Viewer</h1>
+                    </li>
+                    <li>
+                        <select id="breed">
+                        </select>
+                    </li>
+                </ul>
+            </div >
         </div>
+      
+        <div class="sectionContainer">
+          <img id="main" class="main-image" src="" alt="main viewer" />
+          <span id="loader" class="loading-dog show">🐶</span>
+        </div>
+      
+
+
+
+
         <footer class="main_footer">
             <p>GauravKhetwal - All rights reserved &copy; 2022
            </p> 
            <p>This page is created as an Exercise for <span>Frontend Masters Bootcamp</span></p>
         </footer>
     </div>
+    
+  <script src="./js/dogBreed.js"></script>
 </body>
 </html>
